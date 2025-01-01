@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        div{
+            background-color: lightcoral;
+        }
+
+         /* CLass Selector */
+        .yellow{
+            background-color: yellow;
+        }
+
+         /* ID Selector */
+        #green{
+            background-color: green;
+        }
+
+        /* Child Selector */
+        div > p{
+            color: lightgreen;
+            background-color: black;
+        }
+
+        /* Decendant Selector */
+        div  p{
+            color: lightgreen;
+            background-color: black;
+        }
+
+        /* Universal Selector */
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Pseudo Selector */
+        a:visited{
+            color: red;
+        }
+        a:link{
+            color: green;
+        }
+        a:hover{
+            background-color: yellow;
+        }
+
+        p:first-child{
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, aut!
+
+      <article><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quod totam voluptate enim esse tempora quae recusandae ab neque deleniti.</p></article>
+    </div>
+    
+    <div id="green">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, aut!
+    </div>
+
+    <div class="yellow">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, aut!
+    </div>
+     
+    <a href="http://www.google.com">Go to google</a>
+    <a href="http://www.facebook.com">Go to facebook</a>
+
+    <main class="one">
+        <p>I am first</p>
+        <p>I am Second</p>
+    </main>
+
+</body>
+</html>
