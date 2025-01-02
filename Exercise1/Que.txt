@@ -1,0 +1,1 @@
+Write html and css code to style a paragraph inside a div which contains 5 other paragraphs. The first paragraphh must have background color yellow and text color red. The other paragraphs must have background color blue and text color white. The html is written below for your reference.
