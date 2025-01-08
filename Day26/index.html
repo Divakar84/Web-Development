@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        .container{
+            background-color: rgb(172, 218, 45);
+            height: 80vh;
+            width: 40vw;
+        }
+
+        .box{
+            width: 34px;
+            height: 45px;
+            background-color: aqua;
+           /* animation-name: identifier;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out ;
+            animation-delay: 2s;
+            animation-direction: alternate-reverse; 
+            animation-play-state: paused; */
+            animation: identifier 1s ease-in-out 1s backwards, divakar 3s ease-in-out 3s 1 ;
+        }
+
+        @keyframes identifier {
+            from{
+                 background-color: red;
+            }
+            to{
+              
+               background-color: yellow;                
+            }
+        }
+
+        @keyframes divakar {
+            0%{
+                transform: rotate(100deg);
+            }
+            20%{
+                transform: rotate(200deg);
+            }
+            50%{
+                transform: rotate(250deg);
+            }
+            80%{
+                transform: rotate(300deg);
+            }
+            100%{
+                transform: rotate(310deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+    
+</body>
+</html>
