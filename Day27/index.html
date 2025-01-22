@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object Fit and Position</title>
+    <style>
+        .container{
+            height: 645px;
+            width: 688px;
+            border: 2px solid black;
+           /* background-color: azure; */
+           background-image: url(https://gratisography.com/wp-content/uploads/2024/10/gratisography-cool-cat-800x525.jpg);
+           background-repeat: no-repeat;
+           background-position: center center;
+           background-clip: border-box;
+        }
+        img{
+            width: 688px;
+            height: 645px;
+           /* object-fit: cover; */
+            object-fit: fill;
+            object-position: 20px 30px;
+           /* object-fit: contain; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="https://gratisography.com/wp-content/uploads/2024/10/gratisography-cool-cat-800x525.jpg" alt=""> -->
+
+    </div>
+    
+</body>
+</html>
