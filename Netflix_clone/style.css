@@ -14,7 +14,7 @@ body {
   background-image: url("assets/bg.jpg");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: max(1200px, 100vw);
+  background-size: max(2400px, 100vw);
   height: 644px;
   position: relative;
 }
@@ -142,12 +142,6 @@ nav button {
   position: relative;
 }
 
-.secImg img {
-  width: 555px;
-  position: relative;
-  z-index: 10;
-}
-
 .secImg video {
   position: absolute;
   top: 51px;
@@ -181,11 +175,12 @@ section.first > div :nth-child(2) {
 .faq {
   background-color: black;
   color: white;
-  padding: 20px 0;
+  padding: 34px;
 }
 
 .faqbox:hover {
-  background-color: rgb(76, 75, 75);
+  background-color: #414141;
+  color: white;
 }
 
 .faqbox svg {
@@ -193,27 +188,27 @@ section.first > div :nth-child(2) {
 }
 
 .faqbox {
-  transition: all 1s;
+  transition: all 1s ease-out;
   display: flex;
+  font-size: 24px;
   justify-content: space-between;
-  background-color: rgb(41, 40, 40);
-  padding: 10px;
+  background-color: #2d2d2d;
+  padding: 24px;
   color: white;
   max-width: 60vw;
-  margin: 8px auto;
+  margin: 34px auto;
   cursor: pointer;
 }
 
 footer {
   max-width: 60vw;
   margin: auto;
-  padding: 34px ;
+  padding: 60px;
   color: white;
 }
 
-footer span {
+footer .questions {
   padding: 34px 0;
-
 }
 
 .footer {
@@ -222,12 +217,12 @@ footer span {
   color: white;
 }
 
-.footer a{
+.footer a {
   text-decoration: none;
   color: white;
 }
 
-footer .questions{
+footer .questions {
   margin: 7px;
   padding: 20px 0;
 }
@@ -237,4 +232,45 @@ footer .questions{
   flex-direction: column;
   gap: 15px;
   top: 12px;
+}
+
+@media screen and (max-width: 1300px) {
+  nav {
+    max-width: 90vw;
+  }
+
+  .first {
+    flex-wrap: wrap;
+  }
+  .secImg img {
+    width: 305px;
+  }
+  .secImg video {
+    width: 305px;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .hero > :nth-child(1) {
+    font-size: 32px;
+  }
+  .hero > :nth-child(2) {
+    font-size: 18px;
+  }
+  .hero > :nth-child(3) {
+    font-size: 18px;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+  .faq h2{
+    font-size: 32px;
+  }
+  
 }
