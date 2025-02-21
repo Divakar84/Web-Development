@@ -1,0 +1,6 @@
+odemon] restarting due to changes...
+[nodemon] starting `node main.js`
+Example app listening on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node main.js`
+Example app listening on port 30
